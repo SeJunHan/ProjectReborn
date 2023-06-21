@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 3049682735
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: minigamep
+      Dependencies: {}
+    Info_1:
+      Name: justchat
+      Dependencies: {}
+    Info_2:
+      Name: minigameedu
+      Dependencies: {}
+    Info_3:
+      Name: adventure
+      Dependencies: {}
+    Info_4:
+      Name: minigameslayer
+      Dependencies: {}
+    Info_5:
+      Name: minigameagit
+      Dependencies: {}
+    Info_6:
+      Name: homeofcommons
+      Dependencies: {}
+    Info_7:
+      Name: minigameofbania
+      Dependencies: {}
+    Info_8:
+      Name: minigameofsmith
+      Dependencies:
+        Dependency_0: minigameslayer
+    Info_9:
+      Name: homeofslayer
+      Dependencies: {}
+    Info_10:
+      Name: town
+      Dependencies: {}
+    Info_11:
+      Name: public
+      Dependencies: {}

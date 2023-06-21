@@ -1,0 +1,85 @@
+ManifestFileVersion: 0
+CRC: 4072093438
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9223838fd1ec07115b434a1a887bb2f5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cbe0b1418dcf0efd6dcdbaf8ce9084ae
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 28ac21711b0ec40a0812d33a586eb7ec, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7c562f92f3b8b435d98ac3b65547b755, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: baea2e9758e554909b2367e396d9c5a4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 90e5bcf6073ad28418a418c30be4a872, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 03327f67140ed4948b33ce8dd4902910, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 41302e45b5a3c494ab6d47e061a7be85, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 60a195100e1505b418545d662c3b7973, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 46142383fe5a5c247bdb4e492367a0eb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f79a53a8fd7cc484a863b5ba2a94cda2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f040fbdf3ce3d66429b9f269878c947a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c1bb49e4628aefa4c8631534d5470610, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 09f48edbab7d8954cb0daa767982aded, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: df531604e2f6bab4f9766a2ea58e73d3, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 210
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: SPUM_SpriteList/StringListStruct
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+Assets:
+- Assets/Resources/Public/ExploreManager.prefab
+- Assets/Resources/Public/MGQuizManager.prefab
+- Assets/Resources/Prefabs/MiniGame/BattleManager.prefab
+- Assets/Resources/Public/MGDDRManager.prefab
+- Assets/Resources/Prefabs/NPC/MonsterNPC.prefab
+- Assets/Resources/Public/MGTimingManager.prefab
+- Assets/Resources/Prefabs/NPC/MiniGameNPC.prefab
+Dependencies: []
