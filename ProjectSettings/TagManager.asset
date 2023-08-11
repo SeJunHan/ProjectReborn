@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - PlayerAttack
   - MinigameManager
+  - CrowMonster
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - Background
   - InterActive
   - Canvas
-  - 
-  - 
-  - 
+  - Crow
+  - Scarecrow
+  - Projectile
   - 
   - 
   - 

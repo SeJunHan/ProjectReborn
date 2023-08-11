@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 470f931951c388b4aa87e16220d8f9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: 0201
+  SceneName: 0104
 --- !u!212 &362807730
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 470f931951c388b4aa87e16220d8f9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: 0000
+  SceneName: 0004
 --- !u!212 &1626091028
 SpriteRenderer:
   m_ObjectHideFlags: 0

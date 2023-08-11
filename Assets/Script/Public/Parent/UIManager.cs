@@ -19,7 +19,7 @@ public abstract class UIManager : MonoBehaviour
     }
     public virtual void SetActivePanel(bool Active)
     {
-        Panel.SetActive(Active);
+        //Panel.SetActive(Active);
     }
     protected abstract void StartUI();
     protected abstract void EndUI();

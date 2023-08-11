@@ -33,3 +33,4 @@ public enum UISoundOrder { Background, Effect }
 public enum KeyDirection { Up, Down, Left, Right }
 public enum QuestState { None, SelectResidence, Chat, QuestStand, QuestStart, QuestProgress, QuestEnd, Help, Exchange }
 public enum QuestData { QuestNumber, QuestObjectNumber, ClearCount, QuestContent }
+public enum PoolData { Skeleton, Boomerang, EnemyAttack, PlayerProjectile, CrowMonster, ScarecrowProjectile }

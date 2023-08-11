@@ -198,7 +198,7 @@ public class SceneLoadManager : MonoBehaviour
 
                 temObject = Instantiate(bundleP.LoadAsset<GameObject>("Door"), new Vector3(13f, -8.4f, transform.position.z), Quaternion.identity) as GameObject;
                 temObject.name = "DoorToBaniaAgit";
-                temObject.GetComponent<Portal>().ChangeSceneName("0101");
+                temObject.GetComponent<Portal>().ChangeSceneName("0004");
 
                 temObject = Instantiate(bundleP.LoadAsset<GameObject>("Door"), new Vector3(14, -2, transform.position.z), Quaternion.identity) as GameObject;
                 temObject.name = "DoorToQuiz";
@@ -260,22 +260,56 @@ public class SceneLoadManager : MonoBehaviour
 
                 bundle.Unload(false);
                 break;
-            case "0004": // Minigame 대장장이 제작
-                bundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigameofsmith"));
+            case "0004": // Minigame 농부 식량창고 지키기
+                bundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigameoffarmer"));
+                temBundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigamep"));
+                bundle2 = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "adventure"));
+
+                temMap = Instantiate(bundle.LoadAsset<GameObject>("ScarecrowGround"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temMap.name = "Background";
+                temObject = Instantiate(temBundle.LoadAsset<GameObject>("BattleManager"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temBattleManager = temObject.GetComponent<BattleManager>();
+                temBattleManager.name = "BattleManager";
+                temObject = Instantiate(bundle2.LoadAsset<GameObject>("AdventureGameManager"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temObject.name = "AdventureGameManager";
+                temAdventureGameManager = temObject.GetComponent<AdventureGameManager>();
+                temAdventureGameManager.SetBattleManager(temBattleManager);
+                temObject = Instantiate(bundle2.LoadAsset<GameObject>("PoolManager"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temObject.name = "PoolManager";
+                temAdventureGameManager.SetPoolManager(temObject.GetComponent<PoolManager>());
+                temObject = Instantiate(bundle.LoadAsset<GameObject>("MGScarecrowManager"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temObject.name = "MGScarecrowManager";
+                temAdventureGameManager.SetScarecrowManager(temObject.GetComponent<MGScarecrowManager>());
+
+                bundle2.Unload(false);
+                bundle.Unload(false);
+                temBundle.Unload(false);
+                break;
+            case "0104": // Minigame 과일 크래프트
+                bundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigameoffarmer"));
                 temBundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigamep"));
 
-                temMap = Instantiate(bundle.LoadAsset<GameObject>("ForgeOfSmith"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temMap = Instantiate(bundle.LoadAsset<GameObject>("ScarecrowGround"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
                 temMap.name = "Background";
-                temObject = Instantiate(temBundle.LoadAsset<GameObject>("MGTimingManager"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
-                temObject.name = "MGTimingManager";
-                temNPC = Instantiate(temBundle.LoadAsset<GameObject>("MiniGameNPC"), new Vector3(-7, -2, transform.position.z), Quaternion.identity) as GameObject;
-                temObject = Instantiate(bundleP.LoadAsset<GameObject>("Door"), new Vector3(8, -2, transform.position.z), Quaternion.identity) as GameObject;
-                temObject.name = "DoorToBase";
-                temObject.GetComponent<Portal>().ChangeSceneName("0001");
+
+
 
                 bundle.Unload(false);
                 temBundle.Unload(false);
-                break;                  
+                break;
+            case "0204": // Minigame 소싸움
+                bundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigameoffarmer"));
+                temBundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigamep"));
+
+                temMap = Instantiate(bundle.LoadAsset<GameObject>("ScarecrowGround"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temMap.name = "Background";
+                temObject = Instantiate(bundle.LoadAsset<GameObject>("MGBullsFightManager"), new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                temObject.name = "MGBullsFightManager";
+
+
+                bundle.Unload(false);
+                temBundle.Unload(false);
+                break;
             case "0003": // Minigame 대장장이 주조
                 bundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigameofsmith"));
                 temBundle = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath + "/AssetBundles", "minigamep"));

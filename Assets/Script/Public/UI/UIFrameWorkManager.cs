@@ -46,14 +46,14 @@ public class UIFrameWorkManager : MonoBehaviour
 
     void Start()
     {
-        switch(Character.instance.MyMapNumber)
+/*        switch(Character.instance.MyMapNumber)
         {
             case "0003":
             case "0004":
             case "0104":
                 Initialize();
                 break;
-        }
+        }*/
     }
 
     void Update()

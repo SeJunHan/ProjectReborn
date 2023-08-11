@@ -51,7 +51,7 @@ public class PopUpUIManager : MonoBehaviour
 
     public void SettingUIGame()
     {
-        for (int i = 0; i < transform.childCount; i++)
+/*        for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).gameObject.SetActive(true);
         }
@@ -61,7 +61,7 @@ public class PopUpUIManager : MonoBehaviour
         GameManager.instance.AddDayStart(AllClosePopUpUI);
         GameManager.instance.AddLoadEvent(ActiveUIManagerList);
         //Character.instance.MyPlayerController.EventUIInput.AddListener(VisibleUI);
-        Character.instance.MyPlayerController.AddEventUIInput(VisibleUI);
+        Character.instance.MyPlayerController.AddEventUIInput(VisibleUI);*/
     }
 
     private void SceneMovePopUI()

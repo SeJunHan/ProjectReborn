@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3545939137991622750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519954480113218281}
+  - component: {fileID: 6488145060995799329}
+  m_Layer: 0
+  m_Name: MGScarecrowManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &519954480113218281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3545939137991622750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6165139, y: 1.2202187, z: 0.10269499}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6488145060995799329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3545939137991622750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6687e279998610c48a101a47f29f8e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scarecrow: {fileID: 1775995069737197228, guid: 0853c86ea2f22594bac261a45e34441d, type: 3}
+  Scarecrow2: {fileID: 21300000, guid: 7e3bc438d45258443a320415a1cf1567, type: 3}
+  Scarecrow3: {fileID: 21300000, guid: 24b5f03eb71ac0243af691fd1c9cc1e7, type: 3}
+  CrowSpawner: {fileID: 2826917090823753836, guid: 9d4dcca34e7066f468cae211df5b34e5, type: 3}
+  Fence: {fileID: 6382033793783762966, guid: 24806c6924f5e624ab55fbc5c6aa1886, type: 3}
+  Crow2: {fileID: 21300000, guid: b38029ec947d0eb44a32f7ec6e75474a, type: 3}
+  Crow3: {fileID: 21300000, guid: 238e3fda99a337b45b62bfbd058bbd39, type: 3}

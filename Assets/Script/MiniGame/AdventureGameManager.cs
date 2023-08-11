@@ -10,6 +10,7 @@ public class AdventureGameManager : MonoBehaviour
     public PoolManager pool;
     public Spawner spawner;
     public BattleManager battleManager;
+    public MGScarecrowManager scarecrowManager;
 
     private void Awake()
     {
@@ -35,6 +36,10 @@ public class AdventureGameManager : MonoBehaviour
     public void SetBattleManager(BattleManager temBattleManager)
     {
         battleManager = temBattleManager;
+    }
+    public void SetScarecrowManager(MGScarecrowManager temScarecrowManager)
+    {
+        scarecrowManager = temScarecrowManager;
     }
 
     void Update()

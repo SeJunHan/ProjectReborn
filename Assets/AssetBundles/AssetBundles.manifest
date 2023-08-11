@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3049682735
+CRC: 1714591884
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -38,4 +38,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_11:
       Name: public
+      Dependencies: {}
+    Info_12:
+      Name: minigameoffarmer
       Dependencies: {}
